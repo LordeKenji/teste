@@ -1,0 +1,95 @@
+version: '3.1'
+intents:
+- affirm
+- alongamentos
+- bot_challenge
+- deny
+- dor_cardiologista
+- dor_ossos
+- esquecimento
+- exercicios
+- goodbye
+- greet
+- high_pain
+- low_pain
+- medium_pain
+- mood_desanimado
+- mood_great
+- mood_not_well
+- mood_pain
+- mood_unhappy
+- neurologista
+- nutricionista
+- outro
+- passando_mal
+- remedio
+responses:
+  utter_greet:
+  - text: Olá, como posso ajudá-lo?
+  utter_cheer_up:
+  - text: 'Aqui está algo para animá-lo:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_filter:
+  - text: O que você está sentindo?
+  utter_filter_pain:
+  - text: 'Em uma escala de 1 a 10, qual o nível da sua dor?  (OBS: Escreva por extenso o número)'
+  utter_recomendation_pain1:
+  - text: Nessa situação, o ideal é que você procure um check-up em um médico geral para entender melhor sua situação e prevenir de possíveis problemas futuros
+  utter_recomendation_pain2:
+  - text: Procure um  médico especialista ou um médico geral para melhores informações.
+  utter_recomendation_pain3:
+  - text: Vá imediatamente para um hospital! Caso necessário, utilize do Serviço de Atendimento Móvel de Urgência (SAMU 192)
+  utter_did_that_help:
+  - text: Consegui te ajudar?
+  utter_happy:
+  - text: Perfeito, se cuida!
+  utter_goodbye:
+  - text: Até mais :)
+  utter_desanimado:
+  - text: Poxa...farei o possível pra te ajudar! Está se sentindo desanimado, tedioso, gostaria de fazer algo?
+  utter_sol_desanimado:
+  - text: 'Bom, se esse é o caso, separei várias atividades recreativas que existem aqui em Sorocaba para você poder conferir! Algumas boas ideias do que fazer:   - Passeio no Shopping Iguatemi Esplanada   - Andadinha na pista de Caminhada do Campolim   - Compras no CEAGESP Sorocaba   - Visita ao Jardim Botânico Irmãos Vilas Boas   - Conectar-se com a natureza no Parque Natural Municipal Chico Mendes   - Caminhada no Parque Natural Municipal da Água Vermelha   - Conhecer a Catedral Metropolitana de Sorocaba.'
+  utter_outro:
+  - text: Para entendermos melhor o que você está sentindo, entre em contato com a nossa ouvidoria, onde você será atendido(a) por especialistas. Ligue +55 14 99770-6335
+  utter_iamabot:
+  - text: Sou um robô, fico a disposição de ajudá-lo.
+  utter_esquecimento:
+  - text: "Isso é algo complicado! Quando falamos de esquecimento isso ocorre em atitudes rotineiras que agimos no automático e não conseguimos nos recordar dos passos que fazemos. Recomendo que você se recorde da última vez que se lembra de ter visto seu objeto e depois de ter se lembrado, refaça os mesmos passos! Isso provavelmente irá te ajudar, além disso, comece a praticar atividades físicas e faça atividades que estimulem o raciocínio e a memória, isso irá ajudar a longo prazo! Agora, se começar a perceber que está tendo falhas de memórias frequentes em atividades que sempre exerceu, recomendo também que vá a um neurologista." 
+
+  utter_ortopedista:
+  - text: "Eita,voce ta precisando de um ortopedista viu. Calma...deixa que eu cuido disso pra você! Enquanto eu listo os melhores doutores para ti, peça para alguem lhe fazer chá e descanse os ossos...Pronto aqui estão os melhores doutores : https://ortoclinsorocaba.com.br/ https://www.institutodojoelho.com/ https://www.hospitalsantalucinda.com.br/hospital/servicos/ortopedia.html https://www.dradiliobernardes.com.br/"
+
+  utter_cardiologista:
+  - text: Isso pode ser grave! Procure um cardiologista o quanto antes para melhores instruções e exames! E não se esqueça, o cardiologista é o médico que cuida do coração e do sistema circulatório. Assim, é responsável por diagnosticar e tratar as doenças que envolvem os componentes deste sistema. De acordo com a Organização Mundial da Saúde (OMS), as doenças cardiovasculares são as principais causas de morte no mundo!
+  utter_passandomal:
+  - text: "Cuidado isso é pode ser grave, calma...fique onde está e busque um familiar mais próximo para ligar ao SAMU (NÚMERO 192), esse é um serviço de emergência que vai te levar são e salvo para o médico, mas até ele chegar, mantenha-se com alguém ao seu lado de companhia e peça pra ele documentos, remédios dentre outras informações importantes!"
+
+  utter_neurologista:
+  - text: "Em caso de esquecimentos recorrentes, dores de cabeça muito fortes procure um neurologista! Atenção para os sinais de AVC como mãos tremendo e dificuldades para erguer os braços!"
+
+  utter_alongamentos:
+  - text: "Procure fazer alongamentos todos os dias! Isso irá ajudar em suas elasticidade e fluxo sanguíneo, alguns alongamentos simples são: 1. Abraçar os joelhos: Como fazer: Deite-se com os costas na cama, traga os dois joelhos de encontro ao peito e abrace-os, puxando o bastante para sentir o alongamento da lombar e dos posteriores de coxas. 2. Torção de coluna: Como fazer: Mantenha as costas na cama e dobre os joelhos de modo que a planta dos pés encostem na cama. Abra os braços em cruz, com palmas das mãos no chão. Então, deite as duas pernas juntas para um lado, segure pelo tempo determinado e leve-as para o outro lado. Mantenha a postura. Os ombros devem permanecer encostados no colchão. 3. Extensão de perna para o alto: Como fazer: Ainda com os braços em posição de cruz, estique as duas pernas. Traga apenas uma delas para o alto o máximo que conseguir sem dobrar o joelho. Segure pelo tempo indicado e repita com a outra."
+
+  utter_exercicios:
+  - text: 'Que bacana! Exercícios físicos deixam você mais revigorado e animado, vamos começar os treinos então! Algumas sugestões de exercícios físicos para você: 1. Natação  2. Hidroginástica  3. Caminhada  4. Alongamento  5. Musculação  6. Dança  7. Pilates'
+  utter_psicologo:
+  - text: "Entendo que o sentimento é ruim. Todos temos dias que não nos sentimentos bem. É bem difícil compreender os sentimentos ou o que devemos fazer com eles. Se você gostaria de compreender melhor seus sentimentos, talvez devesse procurar um psicólogo, ele te instruirá a lidar com as emoções e como reagir a elas, outra coisa que eu recomendo é que leia um pouco sobre inteligência emocional, isso é muito legal, é uma ferramenta que pode ser usada em todas as situações da vida. Agora, um ponto importante, se você está se sentindo mal psicologicamente com frequência, recomendo que vá ao medico! Em específico um psiquiatra, nada que é ruim e recorrente é bom!"
+
+  utter_nutricionista:
+  - text: "Beba bastante água! Evite comer comidas ricas em gorduras saturadas e com muito açúcar e opte por uma alimentação rica em fibras e vitaminas. Como por exemplo, procure comer saladas com bastante cores com mais frequência, carnes mais magras como frango (evite a pele), e evite consumir refrigerantes, produtos ultra processados e massas. Procure um nutricionista para instruir melhor a sua alimentação, receitando dietas adequadas para obter uma melhora na qualidade de vida e evitar problemas cardiovasculares."
+
+  utter_remedio:
+  - text: 'Hoje você deve tomar: Glifage para sua diabetes (2 comprimidos durante o café da manhã e 2 durante o jantar) e Losartana para pressão alta (às 10 horas)'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_desanimado
+- utter_filter
+- utter_filter_pain
+- utter_greet
+- utter_outro
+- utter_recomendation_pain1
+- utter_recomendation_pain2
+- utter_recomendation_pain3
+- utter_sol_desanimado
